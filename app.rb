@@ -10,3 +10,9 @@ get '/named-cat' do
   @name = params[:name]
   erb(:index)
 end
+
+post '/named-cat2' do
+  p params
+  @name = params[:name]
+  erb(:index)
+end
